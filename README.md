@@ -3,4 +3,4 @@ Set your wallpaper to random images from Unsplash easily within the Settings App
 
 UnsplashWallsXI is licensed under the [MIT License](https://github.com/JeffResc/UnsplashWallsXI/blob/master/LICENSE)
 
-Download it for [free on Packix](https://repo.packix.com/package/com.jeffresc.unsplashwallsxi/)
+Download UnsplashWallsXI for [free on Packix](https://repo.packix.com/package/com.jeffresc.unsplashwallsxi/)
