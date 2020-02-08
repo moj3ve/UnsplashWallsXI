@@ -17,7 +17,7 @@
 
 -(void) openTwitter
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"twitter://user?screen_name=JeffResc_"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"twitter://user?screen_name=JeffRescignano"]];
 }
 
 -(void) openUnsplash
@@ -27,7 +27,7 @@
 
 -(void) openPayPal
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://paypal.me/JeffResc"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://paypal.me/JeffRescignano"]];
 }
 
 -(void) openSupport
@@ -42,10 +42,10 @@
 
 -(void) updateWallpaper
 {
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"UnsplashWallsXI" 
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"UnsplashWallsXI"
 						message:@"Wait patiently while the wallpaper is fetched..."
 						delegate:nil
-						cancelButtonTitle:@"Okay" 
+						cancelButtonTitle:@"Okay"
 						otherButtonTitles:nil];
 	[alert show];
 	[alert release];
@@ -72,10 +72,10 @@
 					[wallpaper setWallpaperForLocations:locations];
 					exit(0);
 			} else {
-					UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"UnsplashWallsXI" 
+					UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"UnsplashWallsXI"
 										message:@"There was an error fetching the wallpaper. Check your internet connection and try again."
 										delegate:nil
-										cancelButtonTitle:@"Okay" 
+										cancelButtonTitle:@"Okay"
 										otherButtonTitles:nil];
 					[alert show];
 					[alert release];

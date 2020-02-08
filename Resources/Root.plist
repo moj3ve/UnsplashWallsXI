@@ -74,7 +74,7 @@
 			<key>icon</key>
 			<string>twitter.png</string>
 			<key>label</key>
-			<string>Developed by @JeffResc_</string>
+			<string>Developed by @JeffRescignano</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -121,8 +121,8 @@
 			<string>PSGroupCell</string>
 			<key>footerAlignment</key>
 			<integer>1</integer>
-<key>label</key>
-<string>UnsplashWallsXI ©2018 Jeff Rescignano</string>
+			<key>label</key>
+			<string>UnsplashWallsXI ©2020 Jeff Rescignano</string>
 		</dict>
 	</array>
 	<key>title</key>
