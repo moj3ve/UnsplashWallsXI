@@ -17,7 +17,6 @@ script:
 os: osx
 osx_image: xcode10.2
 language: objective-c
-sudo: false
 env:
   global:
   - THEOS=~/theos
@@ -39,10 +38,9 @@ before_deploy:
   - git tag -a v$VERSION -m "$DESCRIPTION"
 deploy:
   provider: releases
-  api_key:
+  token:
     secure: JWWhwScqvPF2kxiB8tqVGtVNK4sr8ULFZwtu6G2CLXGyPyqRoSVAP1XkVA1us2TtDAkTegsMvLBvxKaHyVwZHtuUbyuBOndfd51QOBgVX/WDZ+2Adpmvex82RH2G0aqNG5Ie0h0EYKFyE7GI2FKPprkygvQg+ja2WX3/h9bVxTXuZcgbCIFkvzv0BFQFP8DpVW5QsWFwSB2Tl+YHXAzJqkV7sKjLK42u4ATybw2TTCqqZC+3uP3UlvjxUQGC5AMvrpRfQ9RY64vNoHryrsYw2fX06P+MKcenNwaYarC6LsZbYBpEumjqh1Rd80emnnRIpHuIGaemlcW5rFCMwGEQPa8wgJvkSSzHCnTByLNMxBSyOQU3CcNDG+i46WzqKYpWnRy4A0RBc8FZ8GYCTlakc2RmFZq1QIDRFTJc6OyfQyi6sHw/Zc31uXjljMoNK19UnPmWO/HUy8HRKhHYwFS/cjufg3ub7WdM/yRxzE3huhbExge6AldoDWwhasfAu7M2x0ovWMtejAYGi9eGlSiiUQlVGg+DhkaE/VT3IqVuMScTwGs4MThTJl84AgK+Jjm2h+bkPtpwjtC9JOLF1lWGjI+QoYcNrm6w6zY/1e4/IuIeFv3HAXHUDY/egAjH3/i8QM9zh61Is4CIEJGyoOllL5MO3TaAc2o8rDD1yCm7I6c=
   file: $FILENAME
-  skip_cleanup: true
   on:
     branches:
       only:
