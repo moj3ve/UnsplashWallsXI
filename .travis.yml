@@ -12,8 +12,8 @@ before_install:
   - unzip iPhoneOS11.2.sdk.zip -d ~/theos/sdks/iPhoneOS11.2.sdk
 script:
   - "export SYSROOT=~/theos/sdks/iPhoneOS11.2.sdk/"
-  - "export VERSION=1.0.6"
-  - "export DESCRIPTION=Added arm64e support and updated support URLs"
+  - "export VERSION=$(grep 'Version: ' control | sed 's/^.*: //')"
+  - "export DESCRIPTION=$(awk '/## v$VERSION/{getline; print}' README.md)"
   - "export FILENAME='packages/'\"$(grep 'Package: ' control | sed 's/^.*: //')\"'_'\"$VERSION\"'_iphoneos-arm.deb'"
   - make package
 before_deploy:
